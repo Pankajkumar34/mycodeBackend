@@ -5,7 +5,7 @@ const codeFileSchema = new mongoose.Schema(
     userCode: String,
     zipFilePath:String,
     userName: String,
-    discripation: String,
+    descripation: String,
     publishType:{
     type:String,
     default:"0"    // 0 ==> public    1 ===>private 
