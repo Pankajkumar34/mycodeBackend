@@ -6,7 +6,12 @@ let dbpass=process.env.DB_PASSWORD
 
   let url=dburl.replace("<PASSWORD>",dbpass)
  
-  mongoose.connect(url).then((res) => {
+  mongoose.connect(url,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    tls: true,
+    tlsAllowInvalidCertificates: true,
+  }).then((res) => {
     if (!res) {
       console.log("databse not connected");
     }
