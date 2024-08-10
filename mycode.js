@@ -5,6 +5,7 @@ const DB_connect= require('./database/database')
 const route = require('./routes')
 const ErrorHandler = require('./Error/error')
 const path =require("path")
+require('dotenv').config()
 
 // require('dotenv').config()
 DB_connect()
