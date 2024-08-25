@@ -6,6 +6,9 @@ const codeFileSchema = new mongoose.Schema(
     zipFilePath:String,
     userName: String,
     descripation: String,
+    dragIndex:{
+      type:Number,
+    },
     publishType:{
     type:String,
     default:"0"    // 0 ==> public    1 ===>private 
